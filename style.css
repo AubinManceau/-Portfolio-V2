@@ -103,11 +103,28 @@ main{
 
 .img-presentation{
     position: fixed;
-    bottom: -5px;
-    right: 13%;
+    bottom: 0;
+    right: 2vw;
+    z-index: -1;
+    animation: floating 5s ease-in-out 0s infinite;
 }
+
+@keyframes floating{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 .img-presentation img{
-    width: 140%;
+    width: 80vh;
 }
 
 .bouton{
@@ -160,3 +177,66 @@ main{
         gap: 20%;
     }
   }
+
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    .titre h1{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .img-presentation{
+        display: none;
+    }
+
+    .presentation{
+        align-items: center;
+        gap: 20%;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 868px) {
+    .titre h1{
+        font-size: 25px;
+    }
+
+    .img-presentation{
+        position: fixed;
+        right: -8vw;
+    }
+
+    .img-presentation img{
+        width: 70vh;
+    }
+  }
+
+  @media only screen and (min-width: 868px) and (max-width: 992px) {
+    .titre h1{
+        font-size: 25px;
+    }
+
+    .img-presentation{
+        position: fixed;
+        right: -8vw;
+    }
+
+    .img-presentation img{
+        width: 80vh;
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .titre h1{
+        font-size: 35px;
+    }
+
+    .img-presentation{
+        position: fixed;
+        right: -4vw;
+    }
+
+    .img-presentation img{
+        width: 80vh;
+    }
+  }
+
+  
