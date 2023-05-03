@@ -125,6 +125,7 @@ main{
 
 .img-presentation img{
     width: 80vh;
+    opacity: 0.7;
 }
 
 .bouton{
