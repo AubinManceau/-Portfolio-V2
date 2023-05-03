@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body,html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("img/backrgound.png");
+    background-size: cover;
+}
+
+/* Header */
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 15px;
+    z-index: 10000;
+}
+header .logo img{
+    width: 50px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+nav .active{
+    color: #77C2AF;
+}
+
+nav .color{
+    color: #5d5d5d;
+    transition: color 0.3s ease-in-out;
+}
+
+nav .color:hover{
+    color: #77C2AF;
+}
+
+.resaux-sociaux{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.resaux-sociaux .color{
+    color: #5d5d5d;
+    transition: color 0.3s ease-in-out;
+}
+
+.resaux-sociaux .color:hover{
+    color: #77C2AF;
+}
+
+/* Header */
+
+
+/* Main */
+
+main{
+    margin-left: 80px;
+}
+
+/* Main */
+
+/* Presentation */
+
+.titre {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35px;
+}
+
+.titre h1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    margin: 8px 0;
+    font-size: 58px;
+}
+
+.titre .txt-rotate{
+    color: #77C2AF;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 10%;
+    justify-content: center;
+}
+
+.img-presentation{
+    position: fixed;
+    bottom: -5px;
+    right: 13%;
+}
+.img-presentation img{
+    width: 140%;
+}
+
+.bouton{
+    margin-left: 35px;
+}
+
+.bouton a{
+    text-decoration: none;
+    color: #77C2AF;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    border: #77C2AF 2px solid;
+    padding: 9px 8px 6px 8px;
+    font-size: 20px;
+}
+
+.bouton a:hover{
+    color: white;
+    border-color: white;
+}
+
+.sujet{
+    margin-left: 35px;
+}
+
+.sujet span{
+    color: #77C2AF;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    border-bottom: #77C2AF 2px solid;
+}
+
+/* Presentation */
+
+
+/*Responsive*/
+
+@media only screen and (max-width: 600px) {
+    .titre h1{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .img-presentation{
+        display: none;
+    }
+
+    .presentation{
+        align-items: center;
+        gap: 20%;
+    }
+  }
