@@ -71,3 +71,11 @@ main{
 }
 
 /* Main */
+
+main h1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 58px;
+    text-transform: uppercase;
+    text-align: center;
+}

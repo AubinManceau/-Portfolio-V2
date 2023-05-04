@@ -71,3 +71,78 @@ main{
 }
 
 /* Main */
+
+/* Projets */
+
+main h1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 58px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cartes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-bottom: 45px;
+    margin-left: 35px;
+}
+
+.carte{
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 25vw;
+    padding: 15px;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.carte-img img{
+    width: 25vw;
+    border-radius: 15px 15px 0 0;
+}
+
+.carte-texte .titre h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.carte-texte p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.carte-btn a{
+    text-decoration: none;
+    color: #77C2AF;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    border: #77C2AF 2px solid;
+    padding: 9px 8px 6px 8px;
+    font-size: 20px;
+}
+
+.carte-btn{
+    margin-bottom: 15px;
+}
+
+.haut-texte{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carte-texte .date h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* Projets */
