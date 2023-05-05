@@ -16,7 +16,7 @@ header{
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -39,7 +39,7 @@ nav .active{
 }
 
 nav .color{
-    color: #5d5d5d;
+    color: #000000;
     transition: color 0.3s ease-in-out;
 }
 
@@ -55,7 +55,7 @@ nav .color:hover{
 }
 
 .resaux-sociaux .color{
-    color: #5d5d5d;
+    color: #000000;
     transition: color 0.3s ease-in-out;
 }
 
@@ -107,6 +107,7 @@ main{
     right: 2vw;
     z-index: -1;
     animation: floating 5s ease-in-out 0s infinite;
+    filter: drop-shadow(7px 10px 7px rgb(0, 0, 0));
 }
 
 @keyframes floating{

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body,html{
     padding: 0;
@@ -6,7 +7,7 @@ body,html{
 }
 
 body{
-    background-color: #373737;
+    background-color: #ececec;
 }
 
 /* Header */
@@ -15,7 +16,7 @@ header{
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -38,7 +39,7 @@ nav .active{
 }
 
 nav .color{
-    color: #5d5d5d;
+    color: #000000;
     transition: color 0.3s ease-in-out;
 }
 
@@ -54,7 +55,7 @@ nav .color:hover{
 }
 
 .resaux-sociaux .color{
-    color: #5d5d5d;
+    color: #000000;
     transition: color 0.3s ease-in-out;
 }
 
@@ -74,7 +75,7 @@ main{
 
 main h1{
     font-family: 'Josefin Sans', sans-serif;
-    color: white;
+    color: #77C2AF;
     font-size: 58px;
     text-transform: uppercase;
     text-align: center;
@@ -82,7 +83,7 @@ main h1{
 
 main h2{
     font-family: 'Josefin Sans', sans-serif;
-    color: white;
+    color: #77C2AF;
     font-size: 28px;
     text-transform: uppercase;
     text-align: center;
@@ -91,23 +92,24 @@ main h2{
 .presentation{
     display: flex;
     justify-content: space-around;
-    margin: 35px;
+    margin-left: 35px;
+    margin-top: 55px;
 }
 
 .texte-presentation{
-    color: white;
-    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     text-align: justify;
     width: 50%;
     align-self: center;
-    line-height: 25px;
+    line-height: 30px;
 }
 
 .ecole-experience{
     display: flex;
     justify-content: space-around;
-    margin-top: 75px;
+    margin-top: 85px;
     margin-left: 35px;
 }
 
@@ -259,7 +261,7 @@ main h2{
   }
 
   .content h3{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: bolder;
     margin: 0;
@@ -267,7 +269,7 @@ main h2{
   }
 
   .content p{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     margin: 15px 0 5px 0;
     line-height: 25px;

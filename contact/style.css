@@ -6,7 +6,7 @@ body,html{
 }
 
 body{
-    background-color: #373737;
+    background-color: #ececec;
 }
 
 /* Header */
@@ -15,7 +15,7 @@ header{
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: black;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -38,7 +38,7 @@ nav .active{
 }
 
 nav .color{
-    color: #5d5d5d;
+    color: #000000;
     transition: color 0.3s ease-in-out;
 }
 
@@ -54,7 +54,7 @@ nav .color:hover{
 }
 
 .resaux-sociaux .color{
-    color: #5d5d5d;
+    color: #000000;
     transition: color 0.3s ease-in-out;
 }
 
@@ -74,7 +74,7 @@ main{
 
 main h1{
     font-family: 'Josefin Sans', sans-serif;
-    color: white;
+    color: #77C2AF;
     font-size: 58px;
     text-transform: uppercase;
     text-align: center;
