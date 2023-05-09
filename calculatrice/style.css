@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body,html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #ececec;
+}
+
+/* Header */
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 15px;
+    z-index: 10000;
+}
+header .logo img{
+    width: 50px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+nav .active{
+    color: #77C2AF;
+}
+
+nav .color{
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+nav .color:hover{
+    color: #77C2AF;
+}
+
+.resaux-sociaux{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.resaux-sociaux .color{
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+.resaux-sociaux .color:hover{
+    color: #77C2AF;
+}
+
+/* Header */
+
+/* Main */
+
+main{
+    margin-left: 80px;
+}
+
+/* Main */
+
+img{
+
+max-width: 100%;
+
+}
+
+/*pour le saut de page, on cree une class que l'on met en display:none*/
+.target{
+
+display: none
+
+}
+
+
+/* englobe le slider */
+
+.cadre_diapo{
+
+max-width: 600px;
+margin: 2rem auto;
+overflow: hidden;
+	
+}
+
+
+.interieur_diapo{
+	
+display: flex;
+width: 400%;
+transition: transform .6s ease-in-out;
+	
+}
+	
+	
+#votre_id1:target ~ .cadre_diapo .interieur_diapo{
+
+transform:translatex(0)
+
+}/*image 1*/
+
+#votre_id2:target ~ .cadre_diapo .interieur_diapo{
+
+transform:translatex(-25%)
+
+}/*image 2*/
+
+#votre_id3:target ~ .cadre_diapo .interieur_diapo{
+
+transform:translatex(-50%)
+
+}/*image 3*/
+
+#votre_id4:target ~ .cadre_diapo .interieur_diapo{
+
+transform:translatex(-75%)
+
+}/*image 4*/
+
+
+
+
+
+/*navigation avec images miniatures*/
+.navigation_diapo{
+	
+display: flex; /*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
+list-style-type: none;
+margin: 0;
+padding: 0;
+	
+}
+
+.navigation_diapo li {
+	
+	padding: .25rem;
+	
+}
+
+.navigation_diapo img{
+
+    border: 3px solid white;
+    box-shadow:0 0 5px hsla(0,0%,0%,.4);
+
+	
+}
+	
+	
+@media (min-width:31.25rem){
+		
+	.description span{
+			
+		font-size: initial
+		
+	}
+	
+}
+
+.presentation-projet{
+    display: flex;
+    justify-content: left;
+    gap: 10%;
+    margin-left: 35px;
+}
+
+.texte-presentation h2{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #77C2AF;
+    font-size: 58px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.texte-presentation{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+}
+
+.texte-presentation ul{
+    color: #77C2AF;
+    margin: 5px;
+}
+
+.texte-presentation ul li p{
+    margin: 5px;
+}
+
+.texte-presentation p{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    align-self: center;
+    line-height: 30px;
+    margin: 0;
+}
