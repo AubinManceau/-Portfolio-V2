@@ -211,3 +211,24 @@ padding: 0;
     line-height: 30px;
     margin: 0;
 }
+
+.bouton-retour a{
+    text-decoration: none;
+    color: #77C2AF;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    border: #77C2AF 2px solid;
+    padding: 9px 8px 6px 8px;
+    font-size: 20px;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.bouton-retour{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.bouton-retour a:hover{
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+}
